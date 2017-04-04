@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link href="data:text/css,body%20%7B%0A%20%20margin%3A%20auto%3B%0A%20%20padding%2Dright%3A%201em%3B%0A%20%20padding%2Dleft%3A%201em%3B%0A%20%20max%2Dwidth%3A%2055em%3B%20%0A%20%20border%2Dleft%3A%201px%20solid%20black%3B%0A%20%20border%2Dright%3A%201px%20solid%20black%3B%0A%20%20font%2Dfamily%3A%27%E3%83%92%E3%83%A9%E3%82%AE%E3%83%8E%E8%A7%92%E3%82%B4%20Pro%20W3%27%2C%27Hiragino%20Kaku%20Gothic%20Pro%27%2C%27%E3%83%A1%E3%82%A4%E3%83%AA%E3%82%AA%27%2CMeiryo%2C%27%EF%BC%AD%EF%BC%B3%20%EF%BC%B0%E3%82%B4%E3%82%B7%E3%83%83%E3%82%AF%27%2Csans%2Dserif%3B%0A%20%20font%2Dsize%3A%20100%25%3B%0A%20%20line%2Dheight%3A%20140%25%3B%0A%20%20color%3A%20black%3B%20%0A%20%20background%2Dcolor%3A%20ghostwhite%3B%0A%7D%0Apre%20%7B%0A%20%20border%3A%201px%20dotted%20gray%3B%0A%20%20background%2Dcolor%3A%20%23ececec%3B%0A%20%20color%3A%20%231111111%3B%0A%20%20padding%3A%200%2E5em%3B%0A%7D%0Acode%20%7B%0A%20%20font%2Dfamily%3A%20monospace%3B%0A%7D%0Ah1%20a%2C%20h2%20a%2C%20h3%20a%2C%20h4%20a%2C%20h5%20a%20%7B%20%0A%20%20text%2Ddecoration%3A%20none%3B%0A%20%20color%3A%20black%3B%20%0A%7D%0Ah1%2C%20h2%2C%20h3%2C%20h4%2C%20h5%20%7B%20font%2Dfamily%3A%20verdana%3B%0A%20%20%2F%2Afont%2Dweight%3A%20bold%3B%2A%2F%0A%20%20color%3A%20black%3B%20%0A%7D%0Ah1%20%7B%0A%20%20font%2Dsize%3A%20130%25%3B%0A%20%20border%2Dbottom%3A%201px%20dotted%20black%3B%0A%7D%0A%0Ah2%20%7B%0A%20%20font%2Dsize%3A%20110%25%3B%0A%20%20color%3A%20black%3B%0A%7D%0A%0Ah3%20%7B%0A%20%20font%2Dsize%3A%20110%25%3B%0A%20%20color%3A%20gray%3B%0A%7D%0A%0Ah4%20%7B%0A%20%20font%2Dsize%3A%2090%25%3B%0A%20%20font%2Dstyle%3A%20italic%3B%0A%7D%0A%0Ah5%20%7B%0A%20%20font%2Dsize%3A%2090%25%3B%0A%20%20font%2Dstyle%3A%20italic%3B%0A%7D%0A%0Ah1%2Etitle%20%7B%0A%20%20font%2Dsize%3A%20200%25%3B%0A%20%20%2F%2Afont%2Dweight%3A%20bold%3B%2A%2F%0A%20%20padding%2Dtop%3A%200%2E2em%3B%0A%20%20padding%2Dbottom%3A%200%2E2em%3B%0A%20%20text%2Dalign%3A%20left%3B%0A%20%20border%3A%20none%3B%0A%7D%0A%0A%2F%2A%20For%20italic%0A%2F%2A%20Emphasis%20within%20emphasis%3A%20%2AThis%20is%20all%20%2Aemphasized%2A%20except%20that%2A%20%2A%2F%0A%2F%2Aem%7B%0A%20%20font%2Dstyle%3A%20normal%3B%0A%20%20color%3A%20red%3B%0A%7D%2A%2F%0A%0A%2F%2A%20Markwodn%20%2A%2Astrong%2A%2A%20or%20%5F%5Fstrong%5F%5F%20%2A%2F%0Astrong%20%7B%0A%20%20%2F%2Afont%2Dweight%3A%20bold%3B%2A%2F%0A%20%20%2F%2Acolor%3A%20darkorange%3B%2A%2F%0A%7D%0Adl%20dd%20%7B%0A%20%20background%2Dcolor%3Againsboro%3B%0A%7D%0A%0Adt%20code%20%7B%0A%20%20font%2Dweight%3A%20bold%3B%0A%7D%0Add%20p%20%7B%0A%20%20margin%2Dtop%3A%200%3B%0A%7D%0A%0A%0A%2F%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2F%0A%23header%20%7B%0A%20%20padding%2Dtop%3A%201em%3B%0A%20%20font%2Dsize%3A%2090%25%3B%0A%20%20color%3A%20black%3B%0A%20%20text%2Dalign%3A%20center%3B%0A%7D%0A%0A%0A%2F%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2F%0A%23footer%20%7B%0A%20%20padding%2Dtop%3A%201em%3B%0A%20%20font%2Dsize%3A%2070%25%3B%0A%20%20color%3A%20black%3B%0A%20%20text%2Dalign%3A%20center%3B%0A%7D%0A%0A%2F%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2F%0A%0Aa%7B%2F%2A%E3%83%AA%E3%83%B3%E3%82%AF%E3%81%95%E3%82%8C%E3%81%9F%E6%96%87%E5%AD%97%2A%2F%0A%20%20color%3A%20blue%3B%0A%20%20font%2Dstyle%3A%20normal%3B%0A%20%20text%2Ddecoration%3A%20dashed%3B%0A%7D%0Aa%3Ahover%20%7B%2F%2A%E3%83%9E%E3%82%A6%E3%82%B9%E3%82%92%E3%81%AE%E3%81%9B%E3%81%9F%E3%81%A8%E3%81%8D%2A%2F%0A%20%20%2F%2Acolor%3A%20magenta%3B%2A%2F%0A%20%20font%2Dstyle%3Anormal%3B%0A%20%20text%2Ddecoration%3A%20none%3B%0A%7D%0A%0A" rel="stylesheet" type="text/css" />
+  <div id="header">
+    [<a href="http://yutaro-s.github.io/index.html">English</a> | <a href="http://yutaro-s.github.io/index_ja.html">Japanese</a> | <a href="https://scholar.google.com/citations?user=6z28FcEAAAAJ">Google scholar</a>]
+    
+    <!--
+    <div id="menu">
+            <ul>
+                    <li class="current_page_item"><a href="#" accesskey="1" title="">Home</a></li>
+                    <li><a href="#" accesskey="2" title="">CV</a></li>
+                    <li><a href="#" accesskey="3" title="">Research</a></li>
+                    <li><a href="#" accesskey="4" title="">Publications</a></li>
+                    <li><a href="#" accesskey="5" title="">Teaching</a></li>
+                    <li><a href="#" accesskey="5" title="">Resources</a></li>
+            </ul>
+    </div>
+    -->
+  </div>
+</head>
+<body>
+<h1 id="section">2017</h1>
+<dl>
+<dt><strong>A Fast and Easy Regression Technique for <span class="math"><em>k</em></span>-NN Classification Without Using Negative Pairs</strong></dt>
+<dd><p>Yutaro Shigeto, Masashi Shimbo, and Yuji Matsumoto<br />The Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD ’17), May 2017. <!-- (査読あり・long presentation 45/458)  採択率 28.2% (45+84/458) --></p>
+</dd>
+<dt><strong>STAIR Captions: 大規模日本語画像キャプションデータセット</strong></dt>
+<dd><p>吉川友哉, 重藤優太郎, 竹内彰一  言語処理学会第23回年次大会発表論文集, pp. 537-540, 茨城, 2017年3月.<br /><a href="http://www.anlp.jp/proceedings/annual_meeting/2017/pdf_dir/P8-7.pdf">pdf</a></p>
+</dd>
+<dt><strong>抽出型文書要約における分散表現の学習 –文書と要約の距離最小化–</strong></dt>
+<dd><p>田口友哉, 重藤優太郎, 新保仁, 松本裕治  言語処理学会第23回年次大会発表論文集, pp. 497-500, 2017年3月.<br /><a href="http://www.anlp.jp/proceedings/annual_meeting/2017/pdf_dir/P7-4.pdf">pdf</a></p>
+</dd>
+</dl>
+<h1 id="section-1">2016</h1>
+<dl>
+<dt><strong>ハブの抑制によるコンパラブルコーパスからの対訳抽出精度の改善</strong></dt>
+<dd><p>重藤優太郎, 鈴木郁美, 原一夫, 新保仁, 松本裕治<br />人工知能学会論文誌, Vol. 31, No. 2, p. E-F43_1-12, 2016年2月.<br /><a href="http://doi.org/10.1527/tjsai.E-F43">J-STAGE</a></p>
+</dd>
+</dl>
+<h1 id="section-2">2015</h1>
+<dl>
+<dt><strong>Ridge regression, hubness, and zero-shot learning</strong></dt>
+<dd><p>Yutaro Shigeto, Ikumi Suzuki, Kazuo Hara, Masashi Shimbo, and Yuji Matsumoto<br />Proceedings of European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML/PKDD ’15), pp.135-151, Porto, Portogal, September 2015.<br />[<a href="http://dx.doi.org/10.1007/978-3-319-23528-8_9">Springer</a> | <a href="http://arxiv.org/abs/1507.00825">arXiv</a> | <a href="http://cl.naist.jp/~yutaro-s/download/Shigeto_ECML2015_slides.pdf">slides</a> | <a href="http://cl.naist.jp/~yutaro-s/download/Shigeto_ECML2015_poster.pdf">poster</a> | <a href="http://cl.naist.jp/~yutaro-s/download/Shigeto_ECML2015_code.tar.gz">code</a>] (査読あり・口頭・ポスター・<font color="red">Runner-up for the best student paper</font>) <!-- 採択率 23.2% (89/383)*/ --></p>
+</dd>
+<dt><strong>Analyzing the hubness phenomenon in zero-shot learning</strong></dt>
+<dd><p>Yutaro Shigeto<br />Machine Learning Summer School (MLSS ’15), Kyoto, Japan, August 2015.<br />(査読なし・ポスター)</p>
+</dd>
+<dt><strong>Zero-shot learning における線形回帰の影響</strong></dt>
+<dd><p>重藤優太郎, 鈴木郁美, 原一夫, 新保仁, 松本裕治<br />情報処理学会研究報告 第222回自然言語処理研究会, Vol. 2015-NL-222, No. 4, pp. 1-8, 東京, 2016年7月.<br />[<a href="http://id.nii.ac.jp/1001/00142585/">link (IPSJ)</a> | <a href="http://cl.naist.jp/~yutaro-s/download/Shigeto_NL222_slides.pdf">slides</a>] (査読なし・口頭)</p>
+</dd>
+</dl>
+<h1 id="section-3">2014</h1>
+<dl>
+<dt><strong>ベクトルのスパース化を用いた<span class="math"><em>k</em></span>近傍法におけるハブの軽減</strong></dt>
+<dd><p>重藤優太郎, 新保仁, 松本裕治<br />情報処理学会研究報告 第216回自然言語処理研究会 第101回音声言語情報処理研究会 合同研究会, Vol. 2014-NL-216, No. 2, pp. 1-6, 東京, 2014年5月.<br /><a href="http://id.nii.ac.jp/1001/00101191/">link</a> (査読なし・口頭・<font color="red">学生奨励賞</font>)</p>
+</dd>
+<dt><strong>対訳抽出におけるハブの影響</strong></dt>
+<dd><p>重藤優太郎, 新保仁, 松本裕治<br />言語処理学会第20回年次大会 発表論文集, pp. 388-391, 北海道, 2014年3月.<br /><a href="http://www.anlp.jp/proceedings/annual_meeting/2014/pdf_dir/B2-2.pdf">paper</a> (査読なし・口頭)</p>
+</dd>
+</dl>
+<h1 id="section-4">2013</h1>
+<dl>
+<dt><strong>Construction of English MWE dictionary and its application to POS tagging</strong></dt>
+<dd><p>Yutaro Shigeto, Ai Azuma, Sorami Hisamoto, Shuhei Kondo, Tomoya Kose,Keisuke Sakaguchi, Akifumi Yoshimoto, Frances Yung, and Yuji Matsumot<br />Proceedings of the 9th Workshop on Multiword Expressions (MWE ’13), pp. 139–144, Atlanta, Georgia, USA, June 2013.<br /><a href="http://www.aclweb.org/anthology/W13-1021">paper</a> (査読あり・口頭)</p>
+</dd>
+</dl>
+<h1 id="section-5">2012</h1>
+<dl>
+<dt><strong>英語の複単語表現辞書の構築と品詞タグ付けへの応用</strong></dt>
+<dd><p>重藤優太郎，東藍，近藤修平，北裏龍太，坂口慶祐，光瀬智哉，久本空海，吉本暁文，Frances Yung，松本裕治<br />情報処理学会研究報告 第209回自然言語処理研究会, Vol. 2012-NL-209, No. 7, pp. 1-6, 京都, 2012年11月.<br /><a href="http://id.nii.ac.jp/1001/00086986/">link</a> (査読なし・口頭)</p>
+</dd>
+</dl>
+<!-- 
+**Application of multi-dimensional principal component analysis to medical data**
+
+:    Naoki Yamamoto, Jun Murakami, Chiharu Ohkuma, Yutaro Shigeto, Satoko Saito, Takashi Izumi and Nozomi Hayashida\
+     International Journal of Engineering and Physical Sciences, 
+     vol. 6, pp. 260--266, May 2012.\
+     (査読あり)
+
+**Application of multi-dimensional principal component analysis to medical data**
+
+:    Naoki Yamamoto, Jun Murakami, Chiharu Ohkuma, Yutaro Shigeto, Satoko Saito, Takashi Izumi and Nozomi Hayashida\
+     World Academy of Science, Engineering and Technology, 
+     issue 63, pp. 83--89, Phuket, Thailand, March 2012.\
+    (査読あり・口頭)
+-->
+<dl>
+<dt><strong>多次元主成分分析による医療データの特徴分析</strong></dt>
+<dd><p>重藤優太郎, 村上純, 山本直樹, 大隈千春, 齋藤智子, 和泉孝, 林田望<br /> 第 26 回熊本県産学官技術交流会, 熊本, 2012年1月.<br /> (査読なし・口頭)</p>
+</dd>
+</dl>
+<h1 id="section-6">2011</h1>
+<dl>
+<dt><strong>多次元主成分分析の機能的自立度評価表 (FIM) データへの適用</strong></dt>
+<dd><p>重藤優太郎, 村上純, 山本直樹, 大隈千春, 齋藤智子, 和泉孝<br /> 第21回九州沖縄地区高専フォーラム講演要旨集, p. 25, 大分, 2011年12月.<br /> (査読なし・ポスター)</p>
+</dd>
+</dl>
+</body>
+</html>
