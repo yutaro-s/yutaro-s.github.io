@@ -1,0 +1,2 @@
+- [English page](https://yutaro-s.github.io/index_en.html)
+- [Japanese page](https://yutaro-s.github.io/)
