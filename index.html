@@ -1,87 +1,198 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>重藤 優太郎 (Yutaro Shigeto)</title>
-  <style type="text/css">code{white-space: pre;}</style>
-  <link href="data:text/css,body%20%7B%0A%20%20%20%20margin%3A%20auto%3B%0A%20%20%20%20padding%2Dright%3A%201em%3B%0A%20%20%20%20padding%2Dleft%3A%201em%3B%0A%20%20%20%20max%2Dwidth%3A%2055em%3B%20%0A%20%20%20%20border%2Dleft%3A%201px%20solid%20black%3B%0A%20%20%20%20border%2Dright%3A%201px%20solid%20black%3B%0A%20%20%20%20font%2Dfamily%3A%27%E3%83%92%E3%83%A9%E3%82%AE%E3%83%8E%E8%A7%92%E3%82%B4%20Pro%20W3%27%2C%27Hiragino%20Kaku%20Gothic%20Pro%27%2C%27%E3%83%A1%E3%82%A4%E3%83%AA%E3%82%AA%27%2CMeiryo%2C%27%EF%BC%AD%EF%BC%B3%20%EF%BC%B0%E3%82%B4%E3%82%B7%E3%83%83%E3%82%AF%27%2Csans%2Dserif%3B%0A%20%20%20%20font%2Dsize%3A%20100%25%3B%0A%20%20%20%20line%2Dheight%3A%20140%25%3B%0A%20%20%20%20color%3A%20black%3B%20%0A%20%20%20%20background%2Dcolor%3A%20ghostwhite%3B%0A%7D%0Apre%20%7B%0A%20%20%20%20border%3A%201px%20dotted%20gray%3B%0A%20%20%20%20background%2Dcolor%3A%20%23ececec%3B%0A%20%20%20%20color%3A%20%231111111%3B%0A%20%20%20%20padding%3A%200%2E5em%3B%0A%7D%0Acode%20%7B%0A%20%20%20%20font%2Dfamily%3A%20monospace%3B%0A%7D%0A%0A%0Ah1%20a%2C%20h2%20a%2C%20h3%20a%2C%20h4%20a%2C%20h5%20a%20%7B%20%0A%20%20%20%20text%2Ddecoration%3A%20none%3B%0A%20%20%20%20color%3A%20black%3B%20%0A%7D%0Ah1%2C%20h2%2C%20h3%2C%20h4%2C%20h5%20%7B%20font%2Dfamily%3A%20verdana%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2F%2Afont%2Dweight%3A%20bold%3B%2A%2F%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20border%2Dbottom%3A%201px%20dotted%20black%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20color%3A%20black%3B%20%7D%0Ah1%20%7B%0A%20%20%20%20%20%20%20%20font%2Dsize%3A%20130%25%3B%0A%7D%0A%0Ah2%20%7B%0A%20%20%20%20%20%20%20%20font%2Dsize%3A%20110%25%3B%0A%7D%0A%0Ah3%20%7B%0A%20%20%20%20%20%20%20%20font%2Dsize%3A%2095%25%3B%0A%7D%0A%0Ah4%20%7B%0A%20%20%20%20%20%20%20%20font%2Dsize%3A%2090%25%3B%0A%20%20%20%20%20%20%20%20font%2Dstyle%3A%20italic%3B%0A%7D%0A%0Ah5%20%7B%0A%20%20%20%20%20%20%20%20font%2Dsize%3A%2090%25%3B%0A%20%20%20%20%20%20%20%20font%2Dstyle%3A%20italic%3B%0A%7D%0A%0Ah1%2Etitle%20%7B%0A%20%20%20%20%20%20%20%20font%2Dsize%3A%20200%25%3B%0A%20%20%20%20%20%20%20%20%2F%2Afont%2Dweight%3A%20bold%3B%2A%2F%0A%20%20%20%20%20%20%20%20padding%2Dtop%3A%200%2E2em%3B%0A%20%20%20%20%20%20%20%20padding%2Dbottom%3A%200%2E2em%3B%0A%20%20%20%20%20%20%20%20text%2Dalign%3A%20left%3B%0A%20%20%20%20%20%20%20%20border%3A%20none%3B%0A%7D%0A%0A%2F%2A%20For%20italic%0A%2F%2A%20Emphasis%20within%20emphasis%3A%20%2AThis%20is%20all%20%2Aemphasized%2A%20except%20that%2A%20%2A%2F%0A%2F%2Aem%7B%0A%20%20font%2Dstyle%3A%20normal%3B%0A%20%20color%3A%20red%3B%0A%7D%2A%2F%0A%2F%2A%20Markwodn%20%2A%2Astrong%2A%2A%20or%20%5F%5Fstrong%5F%5F%20%2A%2F%0Astrong%20%7B%0A%20%20%20%20%20%20%20%20%2F%2Afont%2Dweight%3A%20bold%3B%2A%2F%0A%20%20%20%20%20%20%20%20%2F%2Acolor%3A%20darkorange%3B%2A%2F%0A%7D%0A%0Adl%20dd%20%7B%0A%20%20%20%20background%2Dcolor%3Againsboro%3B%0A%7D%0A%0Adt%20code%20%7B%0A%20%20%20%20%20%20%20%20font%2Dweight%3A%20bold%3B%0A%7D%0Add%20p%20%7B%0A%20%20%20%20%20%20%20%20margin%2Dtop%3A%200%3B%0A%7D%0A%0A%0A%2F%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2F%0A%23header%20%7B%0A%20%20%20%20%20%20%20%20padding%2Dtop%3A%201em%3B%0A%20%20%20%20%20%20%20%20font%2Dsize%3A%2090%25%3B%0A%20%20%20%20%20%20%20%20color%3A%20black%3B%0A%20%20%20%20%20%20%20%20text%2Dalign%3A%20center%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%0A%2F%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2F%0A%23footer%20%7B%0A%20%20%20%20%20%20%20%20padding%2Dtop%3A%201em%3B%0A%20%20%20%20%20%20%20%20font%2Dsize%3A%2070%25%3B%0A%20%20%20%20%20%20%20%20color%3A%20black%3B%0A%20%20%20%20%20%20%20%20text%2Dalign%3A%20center%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%2F%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A%2F%0A%0A%0Aa%7B%2F%2A%E3%83%AA%E3%83%B3%E3%82%AF%E3%81%95%E3%82%8C%E3%81%9F%E6%96%87%E5%AD%97%2A%2F%0A%20%20%20%20%2F%2Acolor%3A%20blue%3B%2A%2F%0A%20%20%20%20font%2Dstyle%3A%20normal%3B%0A%20%20%20%20text%2Ddecoration%3A%20dashed%3B%0A%7D%0Aa%3Ahover%20%7B%2F%2A%E3%83%9E%E3%82%A6%E3%82%B9%E3%82%92%E3%81%AE%E3%81%9B%E3%81%9F%E3%81%A8%E3%81%8D%2A%2F%0A%20%20%20%20%2F%2Acolor%3A%20magenta%3B%2A%2F%0A%20%20%20%20font%2Dstyle%3Anormal%3B%0A%20%20%20%20text%2Ddecoration%3A%20none%3B%0A%7D%0A" rel="stylesheet" type="text/css" />
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <style type="text/css">@charset "utf-8";
+html {
+background-color: #333333; 
+}
+body {
+margin: auto;
+padding-right: 1em;
+padding-left: 1em;
+max-width: 65em; border-left: 1px solid black;
+border-right: 1px solid black;
+font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+font-size: 100%;
+line-height: 140%;
+color: black; background-color: ghostwhite;
+}
+h1, h2, h3, h4, h5 { text-decoration: none;
+border-bottom: 1px dotted black;
+color: black; }
+h1.title {
+font-size: 200%;
+padding-top: 0em;
+text-align: left;
+border: none;
+}
+h2 {
+font-size: 130%;
+padding-top: 1em;
+}
+dt {
+font-weight: bold;
+}
+dd {
+padding-left : 0;
+margin-top: 0;
+margin-left: 0;
+background-color: gainsboro;
+}
+p {
+margin-top: 0;
+}
+#header {
+padding-top: 1em;
+padding-bottom: 1em;
+font-size: 90%;
+color: black;
+text-align: center;
+}
+#footer {
+padding-top: 1em;
+padding-bottom: 1em;
+font-size: 90%;
+color: black;
+text-align: center;
+}
+a {
+font-style: normal;
+text-decoration: dashed;
+}
+a:hover {
+font-style:normal;
+text-decoration: none;
+}
+</style>
   <div id="header">
-    [<a href="http://yutaro-s.github.io/index_en.html">English</a> | <a href="http://yutaro-s.github.io/index.html">Japanese</a> | <a href="https://scholar.google.com/citations?user=6z28FcEAAAAJ">Google scholar</a>]
-    
-    <!--
-    <div id="menu">
-            <ul>
-                    <li class="current_page_item"><a href="#" accesskey="1" title="">Home</a></li>
-                    <li><a href="#" accesskey="2" title="">CV</a></li>
-                    <li><a href="#" accesskey="3" title="">Research</a></li>
-                    <li><a href="#" accesskey="4" title="">Publications</a></li>
-                    <li><a href="#" accesskey="5" title="">Teaching</a></li>
-                    <li><a href="#" accesskey="5" title="">Resources</a></li>
-            </ul>
-    </div>
-    -->
+    [<a href="http://yutaro-s.github.io/index_en.html">English</a> | <a href="http://yutaro-s.github.io/index.html">Japanese</a>]
   </div>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
 </head>
 <body>
-<div id="header">
+<header id="title-block-header">
 <h1 class="title">重藤 優太郎 (Yutaro Shigeto)</h1>
-</div>
-<p>E-Mail: shigeto at stair.center</p>
-<p><a href="http://www.it-chiba.ac.jp/">千葉工業大学</a><br /><a href="https://stair.center/">人工知能・ソフトウェア技術研究センター (STAIR Lab)</a><br />主任研究員</p>
-<h1 id="最近の研究">最近の研究</h1>
+</header>
+<p>千葉工業大学 人工知能・ソフトウェア技術研究センター (STAIR Lab)
+で主任研究員として働いています. 理化学研究所 革新知能統合研究センター
+(Riken AIP) 目的指向基盤技術研究グループ
+知識獲得チームで客員研究員としても働いています.</p>
+<p>[<a href="http://www.it-chiba.ac.jp/">千葉工業大学</a> | <a href="https://stair.center/">STAIR Lab</a> | <a href="https://aip.riken.jp/labs/goalorient_tech/knowl_acqui/">AIP
+知識獲得チーム</a>]</p>
+<p>自然言語処理 (<a href="https://aclanthology.org/P17-2066/">ACL2017</a>, <a href="https://aclanthology.org/2020.lrec-1.574/">LREC2020</a>)
+やコンピュータビジョン (<a href="https://www.sciencedirect.com/science/article/pii/S107731422100120X">CVIR2021</a>,
+<a href="https://ieeexplore.ieee.org/abstract/document/9402853">TCSVT2021</a>),
+機械学習 (<a href="https://arxiv.org/abs/1507.00825">ECML/PKDD2015</a>,
+<a href="https://arxiv.org/abs/1806.03945">PAKDD2017</a>)
+に関する研究に取り組んでいます.</p>
+<p>[<a href="https://scholar.google.com/citations?user=6z28FcEAAAAJ">Google
+Scholar</a> | <a href="https://www.semanticscholar.org/author/Yutaro-Shigeto/3087214">Semantic
+Scholar</a>]</p>
+<p>技術相談, 講演依頼, 共同研究等のご相談は以下にご連絡ください.</p>
+<p>Email: shigeto atmark stair.center</p>
+<h2 id="最近の研究">最近の研究</h2>
 <dl>
-<dt><strong>STAIR Captions: Constructing a Large-Scale Japanese Image Caption Dataset</strong></dt>
-<dd><p>Yuya Yoshikawa, Yutaro Shigeto, and Akikazu Takeuchi<br />The 55th annual meeting of the Association for Computational Linguistics (ACL ’17), July 2017.<br /><a href="https://stair-lab-cit.github.io/STAIR-captions-web/">project page</a></p>
+<dt><strong>MetaVD: A Meta Video Dataset for enhancing human action
+recognition datasets</strong></dt>
+<dd>
+<p>Yuya Yoshikawa, Yutaro Shigeto, and Akikazu Takeuchi<br />
+Computer Vision and Image Understanding, 212, 103276, November
+2021.<br />
+[<a href="https://doi.org/10.1016/j.cviu.2021.103276">paper</a> | <a href="https://metavd.stair.center/index.html">project page</a> | <a href="https://github.com/STAIR-Lab-CIT/metavd">github</a>]</p>
 </dd>
-<dt><strong>A Fast and Easy Regression Technique for <span class="math"><em>k</em></span>-NN Classification Without Using Negative Pairs</strong></dt>
-<dd><p>Yutaro Shigeto, Masashi Shimbo, and Yuji Matsumoto<br />The Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD ’17), May 2017. <!-- (査読あり・long presentation 45/458)  採択率 28.2% (45+84/458) --></p>
+<dt><strong>Predicting How CNN Training Time Changes on Various
+Mini-Batch Sizes by Considering Convolution Algorithms and Non-GPU
+Time</strong></dt>
+<dd>
+<p>Peter Bryzgalov, Toshiyuki Maeda, and Yutaro Shigeto<br />
+Performance EngineeRing, Modelling, Analysis, and VisualizatiOn
+STrategy, pp. 11–18, June 2021.<br />
+<a href="https://dl.acm.org/doi/abs/10.1145/3452412.3462750">paper</a></p>
 </dd>
-<dt><strong>抽出型文書要約における分散表現の学習 –文書と要約の距離最小化–</strong></dt>
-<dd><p>田口友哉, 重藤優太郎, 新保仁, 松本裕治<br />言語処理学会第23回年次大会発表論文集, pp. 497-500, 2017年3月.<br /><a href="http://www.anlp.jp/proceedings/annual_meeting/2017/pdf_dir/P7-4.pdf">pdf</a></p>
+<dt><strong>Characterization of Pulmonary Nodules in Computed Tomography
+Images based on Pseudo-labeling using Radiology Reports</strong></dt>
+<dd>
+<p>Yohei Momoki, Akimichi Ichinose, Yutaro Shigeto, Ukyo Honda, Keigo
+Nakamura, and Yuji Matsumoto<br />
+IEEE Transactions on Circuits and Systems for Video Technology, vol. 32,
+no. 5, pp. 2582-2591, May 2021.<br />
+<a href="https://ieeexplore.ieee.org/abstract/document/9402853">paper</a></p>
+</dd>
+<dt><strong>Video Caption Dataset for Describing Human Actions in
+Japanese</strong></dt>
+<dd>
+<p>Yutaro Shigeto, Yuya Yoshikawa, Jiaqing Lin, and Akikazu
+Takeuchi<br />
+The 12th International Conference on Language Resources and Evaluation
+(LREC), pp. 4666-4672, May 2020. <!-- 採択率 60%*/ --><br />
+[<a href="https://www.aclweb.org/anthology/2020.lrec-1.574/">paper</a> |
+<a href="https://arxiv.org/abs/2003.04865">arXiv</a> | <a href="https://actions.stair.center/captions.html">project page</a>]</p>
 </dd>
 </dl>
-<p><a href="http://yutaro-s.github.io/publication.html">研究発表一覧</a></p>
-<!--
-職歴
-=========
-
--   2016/5/23-2016/6/24,  千葉工業大学 ソフトウェア・人工知能技術研究センター (STAIR Lab), インターンシップ.
--   2014/4--2017/3,  奈良先端科学技術大学院大学, リサーチアシスタント.
--   2010/7--2010/7,  株式会社ナバック, インターンシップ.
--   2008/7--2008/7,  株式会社イーシーエス, インターンシップ.
--->
-<!--
-教育歴
-========
-
--   ティーチングアシスタント, 自然言語処理学特論 (離散数学), NAIST, 2014--2016.
--   ティーチングアシスタント, アルゴリズム II, NAIST, 2013,2014.
--   ティーチングアシスタント, NAIST サマーブートキャンプ: 日本人の英作文における誤りの自動検出, NAIST, 2012.
--->
-<!--
-学歴
-=========
-[奈良先端科学技術大学院大学 (NAIST)](http://www.naist.jp/index_j.html)\
-[自然言語処理学研究室 (松本裕治研究室)](http://cl.naist.jp/index.php)\
-
--   2014/4--2017/3,  奈良先端科学技術大学院大学 情報科学研究科 博士後期課程.
--   2012/4--2014/3,  奈良先端科学技術大学院大学 情報科学研究科 博士前期課程.
--   2010/4--2012/3,  熊本高等専門学校 熊本キャンパス 電子情報システム工学専攻.
--->
-<h1 id="受賞歴">受賞歴</h1>
+<p><a href="http://yutaro-s.github.io/publication.html">これまでの研究</a></p>
+<h2 id="研究助成">研究助成</h2>
 <dl>
-<dt><strong>Runner-up for the best student paper</strong>, European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML/PKDD ’15), September 2015.</dt>
-<dd><p>Ridge Regression, Hubness, and Zero-Shot Learning<br />Yutaro Shigeto, Ikumi Suzuki, Kazuo Hara, Masashi Shimbo, and Yuji Matsumoto</p>
+<dt><strong>海洋生物ビッグデータ活用技術高度化 (分担)</strong></dt>
+<dd>
+<p>Ocean180:
+海洋生物多様性ビッグデータ汎用化の基盤技術と海の豊かさを守る応用技術の開発<br />
+研究期間 2021-2030</p>
+</dd>
+<dt><strong>科研費基盤研究若手 (代表)</strong></dt>
+<dd>
+<p>ゼロショットキャプション生成法の開発<br />
+研究期間 2021-2022</p>
+</dd>
+<dt><strong>科研費基盤研究B (分担)</strong></dt>
+<dd>
+<p>高次元空間上の検索として見た機械学習諸問題: 解釈と解法<br />
+研究期間 2019-2022</p>
+</dd>
+</dl>
+<p><a href="http://yutaro-s.github.io/grant.html">これまでの研究助成</a></p>
+<h2 id="受賞歴">受賞歴</h2>
+<dl>
+<dt><strong>Runner-up for the best student paper</strong>, European
+Conference on Machine Learning and Principles and Practice of Knowledge
+Discovery in Databases (ECML/PKDD ’15), September 2015.</dt>
+<dd>
+<p>Ridge Regression, Hubness, and Zero-Shot Learning<br />
+Yutaro Shigeto, Ikumi Suzuki, Kazuo Hara, Masashi Shimbo, and Yuji
+Matsumoto</p>
 </dd>
 </dl>
 <!-- -   **特に優れた業績による奨学金返還免除 (全額)**, 独立行政法人 日本学生支援機構, 2014年5月. -->
 <dl>
-<dt><a href="http://nl-ipsj.or.jp/%E5%AD%A6%E7%94%9F%E5%A5%A8%E5%8A%B1%E8%B3%9E/"><strong>学生奨励賞</strong></a>, 情報処理学会 第101回音声言語情報処理研究会 第216回自然言語処理研究会 合同研究会, 2014年5月.</dt>
-<dd>ベクトルのスパース化を用いた<span class="math"><em>k</em></span>近傍法におけるハブの軽減<br />重藤優太郎, 新保仁, 松本裕治
+<dt><strong>学生奨励賞</strong>, 情報処理学会
+第101回音声言語情報処理研究会 第216回自然言語処理研究会 合同研究会,
+2014年5月.</dt>
+<dd>
+<p>ベクトルのスパース化を用いた<span class="math inline"><em>k</em></span>近傍法におけるハブの軽減<br />
+重藤優太郎, 新保仁, 松本裕治. <a href="http://nl-ipsj.or.jp/%E5%AD%A6%E7%94%9F%E5%A5%A8%E5%8A%B1%E8%B3%9E/">link</a></p>
 </dd>
 </dl>
-<p><strong>トップ奨学生</strong>, 奈良先端科学技術大学院大学, 2014年4月.</p>
+<p><strong>トップ奨学生</strong>, 奈良先端科学技術大学院大学,
+2014年4月.</p>
+<h2 id="その他">その他</h2>
+<p><a href="http://yutaro-s.github.io/background.html">職歴・学歴</a></p>
+<p><a href="http://yutaro-s.github.io/misc.html">その他の活動</a></p>
+<div id="footer">
+    Updated in June 2022
+</div>
 </body>
 </html>
